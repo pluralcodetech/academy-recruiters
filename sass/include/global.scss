@@ -307,7 +307,7 @@ h1 {
 }
 
 .boxc {
-    background: url("assets/cert.png") no-repeat center center;
+    background: url("assets/pix4.png") no-repeat center center;
     background-size: contain;
     height: 565px;
     width: 100%;
@@ -350,10 +350,7 @@ h1 {
     background-color: $gradient-color;
 }
 
-.motherBox {
-    width: 50%;
-    margin-top: 70px;
-}
+
 @media screen and (max-width: 480px) {
     .motherBox {
         position: relative;
@@ -554,7 +551,8 @@ hr {
 
 
 .input,
-textarea {
+textarea,
+select {
     width: 100%;
     height: 60px;
     padding-left: 20px;
@@ -571,6 +569,14 @@ textarea {
     color: $color-fade;
 }
 
+select:invalid{
+    color: #727070;
+}
+option{
+    color: black;
+}
+
+
 .button-submit {
     font-family: $font-nunito;
     border: 0;
@@ -581,7 +587,7 @@ textarea {
     border-radius: 3.617173671722412px;
     padding: 9px, 29px, 9px, 29px;
     color: $color-white;
-    background-image: linear-gradient(to right, $gradient-color, $gradientB-color);
+    background-image: linear-gradient(to right, $button-bgb-gradient, $button-bgc-gradient);
 }
 
 
